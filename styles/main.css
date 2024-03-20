@@ -96,6 +96,7 @@ tr:nth-child(even) {
     text-align: center;
     border: 1px solid #dddddd;
     list-style-type: none;
+    height: 100%;
 }
 .configsection{
     flex: 70%;
