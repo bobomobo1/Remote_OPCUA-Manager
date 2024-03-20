@@ -27,6 +27,7 @@ header {
     color: white;
     height: 40px;
     width: 50px;
+  font-weight: 600;
 }
 
 
@@ -58,7 +59,6 @@ header {
     }
 }
 
-
 header h1 {
     float: left;
     padding: 5px;
@@ -88,6 +88,8 @@ tr:nth-child(even) {
 .flexgrid{
     display: flex;
     flex: none;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .sidebar{
     flex:20%;
@@ -145,11 +147,11 @@ tr:nth-child(even) {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: dodgerblue;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px dodgerblue;
 }
 
 input:checked + .slider:before {

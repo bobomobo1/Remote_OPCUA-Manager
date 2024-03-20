@@ -44,7 +44,7 @@
                     <td>IN1</td>
                     <td>
                         <label class="switch">
-                            <input checked id="in_enable_1" name=in_value_1 type="checkbox" onclick=myFunction()>
+                            <input id="in_enable_1" name=in_value_1 type="checkbox" onclick=myFunction()>
                             <span class="slider"></span>
                         </label>
                     </td>
@@ -54,7 +54,7 @@
                     <td>IN2</td>
                     <td>
                         <label class="switch">
-                            <input checked id="in_enable_2" name=in_value_1 type="checkbox" onclick=myFunction()>
+                            <input  id="in_enable_2" name=in_value_1 type="checkbox" onclick=myFunction()>
                             <span class="slider"></span>
                         </label>
                     </td>
@@ -64,7 +64,7 @@
                     <td>OUT1</td>
                     <td>
                         <label class="switch">
-                            <input checked id="out_enable_1" name=in_value_1 type="checkbox" onclick=myFunction()>
+                            <input  id="out_enable_1" name=in_value_1 type="checkbox" onclick=myFunction()>
                             <span class="slider"></span>
                         </label>
                     </td>
@@ -74,7 +74,7 @@
                     <td>OUT2</td>
                     <td>
                         <label class="switch">
-                            <input checked id="out_enable_2" name=in_value_1 type="checkbox" onclick=myFunction()>
+                            <input  id="out_enable_2" name=in_value_1 type="checkbox" onclick=myFunction()>
                             <span class="slider"></span>
                         </label>
                     </td>
