@@ -31,6 +31,7 @@
                 <li id="name">Device1</li>
                 <li id="ip"></li>
                 <li id="port"></li>
+                <li><button class="writeButton" onclick="writeToFile()">Push</button></li>
             </ul>
         </div>
         <div class="configsection">

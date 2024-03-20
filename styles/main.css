@@ -159,3 +159,5 @@ input:checked + .slider:before {
   -ms-transform: translateX(86px);
   transform: translateX(86px);
 }
+.writeButton{
+}
