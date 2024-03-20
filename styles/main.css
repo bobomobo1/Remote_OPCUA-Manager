@@ -2,11 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'segoe ui';
 }
 
 header {
     background-color: #333;
-    font-family: 'segoe ui';
     width: 100%;
     overflow: hidden;
     padding: 0.2%;
