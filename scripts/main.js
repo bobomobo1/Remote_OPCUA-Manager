@@ -31,6 +31,7 @@ function writeToFile() {
   const xmlhttp = new XMLHttpRequest();
   xmlhttp.onload = function () {
     const myObj = JSON.parse(this.responseText);
+    const parser = JSON.stringify(myObj,null, 2);
     myObj.PLC_Name = document.getElementById("name").innerHTML;
     myObj.IPV4_ADDRS = document.getElementById("ip").innerHTML;
     myObj.port = document.getElementById("port").innerHTML;
@@ -43,8 +44,18 @@ function writeToFile() {
     myObj.OUT1[2].TagName = document.getElementById("3").innerHTML;
     myObj.OUT2[2].TagName = document.getElementById("4").innerHTML;
     myObj.is_config = "No"
-    console.log(myObj);
+
+    const blob = new Blob([[parser]], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'data.json';
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
   };
-  xmlhttp.open("GET", "data/data.json");
-  xmlhttp.send();
+    xmlhttp.open("POST", "data/data.json");
+    xmlhttp.send();
+    console.log(parser);
 }
